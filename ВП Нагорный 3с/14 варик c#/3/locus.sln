@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "locus", "locus\locus.csproj", "{57E2CB95-55E2-45A7-85CA-3C58E5945F08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57E2CB95-55E2-45A7-85CA-3C58E5945F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E2CB95-55E2-45A7-85CA-3C58E5945F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E2CB95-55E2-45A7-85CA-3C58E5945F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E2CB95-55E2-45A7-85CA-3C58E5945F08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18FB2DAA-D3B9-4AD5-8865-34CF38D22C11}
+	EndGlobalSection
+EndGlobal

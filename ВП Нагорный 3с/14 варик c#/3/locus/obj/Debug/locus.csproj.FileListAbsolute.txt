@@ -1,0 +1,9 @@
+C:\_projects\windows forms\locus\locus\bin\Debug\locus.exe.config
+C:\_projects\windows forms\locus\locus\bin\Debug\locus.exe
+C:\_projects\windows forms\locus\locus\bin\Debug\locus.pdb
+C:\_projects\windows forms\locus\locus\obj\Debug\locus.csprojAssemblyReference.cache
+C:\_projects\windows forms\locus\locus\obj\Debug\locus.Form1.resources
+C:\_projects\windows forms\locus\locus\obj\Debug\locus.Properties.Resources.resources
+C:\_projects\windows forms\locus\locus\obj\Debug\locus.csproj.GenerateResource.cache
+C:\_projects\windows forms\locus\locus\obj\Debug\locus.exe
+C:\_projects\windows forms\locus\locus\obj\Debug\locus.pdb

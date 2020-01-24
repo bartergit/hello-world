@@ -1,0 +1,10 @@
+C:\_projects\windows forms\textChange\textChange\bin\Debug\textChange.exe.config
+C:\_projects\windows forms\textChange\textChange\bin\Debug\textChange.exe
+C:\_projects\windows forms\textChange\textChange\bin\Debug\textChange.pdb
+C:\_projects\windows forms\textChange\textChange\obj\Debug\textChange.Form1.resources
+C:\_projects\windows forms\textChange\textChange\obj\Debug\textChange.Properties.Resources.resources
+C:\_projects\windows forms\textChange\textChange\obj\Debug\textChange.csproj.GenerateResource.cache
+C:\_projects\windows forms\textChange\textChange\obj\Debug\textChange.exe
+C:\_projects\windows forms\textChange\textChange\obj\Debug\textChange.pdb
+C:\_projects\windows forms\textChange\textChange\obj\Debug\textChange.csprojAssemblyReference.cache
+C:\_projects\windows forms\textChange\textChange\obj\Debug\textChange.MyClass.resources
