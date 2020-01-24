@@ -1,0 +1,3 @@
+﻿  Source.cpp
+d:\прога 2 курс\project5\project5\source.cpp(163): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Project5.vcxproj -> D:\прога 2 курс\Project5\Debug\Project5.exe

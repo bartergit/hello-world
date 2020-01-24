@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\ангелина\source\repos\2_lab4\2_lab4\binarytree.cpp(85): warning C4717: BinaryTree<Cat>::clean: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+  2_lab4.vcxproj -> C:\Users\Ангелина\source\repos\2_lab4\Debug\2_lab4.exe
+  2_lab4.vcxproj -> C:\Users\Ангелина\source\repos\2_lab4\Debug\2_lab4.pdb (Partial PDB)

@@ -1,0 +1,176 @@
+#pragma once
+#include "vector.h"
+
+namespace prog {
+#pragma region Constuctors and Destructor
+	template<class T>
+	vector<T>::vector() {
+		n = 3;
+		val = new T[n];
+		if (!val) { std::cout << "Error!"; _getch(); return; }
+		for (int i(0); i < n; i++) val[i] = 0;
+	}
+	template<class T>
+	vector<T>::vector(int N) {
+		n = N;
+		val = new T[n];
+		if (!val) { std::cout << "Error!"; _getch(); return; }
+		for (int i(0); i < n; i++) val[i] = 0;
+	}
+	template<class T>
+	vector<T>::vector(int N, T* Val) {
+		n = N;
+		val = new T[n];
+		if (!val) { std::cout << "Error!"; _getch(); return; }
+		for (int i(0); i < n; i++) val[i] = Val[i];
+	}
+	template<class T>
+	vector<T>::vector(const vector&ob) {
+		n = ob.n;
+		val = new T[n];
+		if (!val) { std::cout << "Error!"; _getch(); return; }
+		for (int i(0); i < n; i++) val[i] = ob.val[i];
+	}
+	template<class T> vector<T>::~vector() { delete[] val; }
+#pragma endregion
+#pragma region Class funcions 
+	template<class T>
+	void vector<T>::setvector(int N, T* Val) {
+		n = N;
+		if (val) T val;
+		val = new T[n];
+		for (int i(0); i < n; i++) val[i] = Val[i];
+	}
+	template<class T>
+	vector<T> vector<T>::getvector() {
+		return *this;
+	}
+	template<class T>
+	void vector<T>::showvector() {
+		std::cout << "Вектор размерности - " << n << std::endl;
+		for (int i(0); i < n; i++) {
+			std::cout << val[i] << ' ';
+		}
+		std::cout << std::endl;
+	}
+	template<class T> int vector<T>::getDemension() { return n; }
+	template<class T> void vector<T>::setVal(T value, int i) { val[i] = value; }
+	template<class T> T vector<T>::getVal(int i) { return val[i]; }
+	template<class T>
+	double vector<T>::Scalar(vector& ob1, vector&ob2) {
+		double sum = 0;
+		if (ob1.n != ob2.n) std::cout << "Ошибка!" << std::endl;
+		for (int i(0); i < ob1.n; i++) sum += ob1.val[i] * ob2.val[i];
+		return sum;
+	}
+	template<class T>
+	double AbsValue(vector<T>&ob) {
+		double sum = 0;
+		for (int i(0); i < ob.getDemension(); i++)
+			sum += ob.getVal(i)*ob.getVal(i);
+		return sqrt(sum);
+	}
+	template<class T>
+	vector<T> vector<T>::Sum(vector&ob1, vector&ob2) {
+		if (ob1.n != ob2.n) std::cout << "Ошибка!" << std::endl;
+		vector res(ob1.n);
+		for (int i(0); i < ob1.n; i++) res.num[i] = ob1.num[i] + ob2.num[i];
+		return res;
+	}
+	template<class T>
+	vector<T> vector<T>::Sub(vector&ob1, vector&ob2) {
+		if (ob1.n != ob2.n) std::cout << "Ошибка!" << std::endl;
+		vector res(ob1.n);
+		for (int i(0); i < ob1.n; i++) res.val[i] = ob1.val[i] - ob2.val[i];
+		return res;
+	}
+	template<class T>
+	vector<T> vector<T>::MultC(vector& ob, double value) {
+		vector res(ob.n);
+		for (int i(0); i < ob.n; i++) res.val[i] = ob.num[i] * value;
+		return res;
+	}
+#pragma endregion
+#pragma region Operators
+	template<class T>
+	double vector<T>::operator*(vector ob) {
+		double sum = 0;
+		for (int i(0); i < ob.n; i++) sum += this->val[i] * ob.val[i];
+		return sqrt(sum);
+	}
+	template<class T>
+	vector<T> vector<T>::operator*(const T C) {
+		vector res(n);
+		for (int i(0); i < n; i++)
+			res.val[i] = this->val[i] * C;
+		return res;
+	}
+	template<class T>
+	vector<T> vector<T>::operator+(vector ob) {
+		vector res(ob.n);
+		for (int i(0); i < ob.n; i++) res.val[i] = this->val[i] + ob.val[i];
+		return res;
+	}
+	template<class T>
+	vector<T> vector<T>::operator-(vector ob) {
+		vector res(ob.n);
+		for (int i(0); i < ob.n; i++) res.val[i] = this->val[i] - ob.val[i];
+		return res;
+	}
+	template<class T>
+	vector<T> vector<T>::operator=(const vector ob) {
+		if (&ob == this) return *this;
+		if (val) delete[] val;
+		n = ob.n;
+		val = new T[ob.n];
+		for (int i(0); i < ob.n; i++) val[i] = ob.val[i];
+		return *this;
+	}
+	template<class T>
+	vector<T> vector<T>::operator++() {
+		for (int i(0); i < n; i++)
+			(this->val[i])++;
+		return *this;
+	}
+	template<class T>
+	vector<T> vector<T>::operator--() {
+		for (int i(0); i < n; i++)
+			(this->val[i])--;
+		return *this;
+	}
+	/*
+	template<class T>
+	std::ostream& operator<<(std::ostream& os, vector<T>& ob) {
+		for (int i(0); i < ob.n; i++)
+			os << ob.val[i] << ' ';
+		os << std::endl;
+		return os;
+	}
+	template<class T>
+	std::istream& operator>>(std::istream& is, vector<T>& ob) {
+		for (int i(0); i < ob.n; i++)
+			is >> ob.val[i];
+		return is;
+	}
+	*/
+	template<class T> T &vector<T>::operator[](int i) { return val[i]; }
+	template<class T> T &vector<T>::operator=(T value) { return value; }
+#pragma endregion
+#pragma region Non class functions
+	template<class T>
+	bool Coll(vector<T>& ob1, vector<T>&ob2) {
+		if (ob1.getDemension() != ob2.getDemension()) std::cout << "Error!" << std::endl;
+		for (int i(1); i < ob1.getDemension(); i++)
+			if (ob1.getVal(0)*ob2.getVal(i) != ob1.getVal(i)*ob2.getVal(0)) return false;
+		return true;
+	}
+	template<class T>
+	bool Orto(vector<T>& ob1, vector<T>& ob2) {
+		double sum = 0;
+		if (ob1.getDemension() != ob2.getDemension()) std::cout << "Ошибка!" << std::endl;
+		for (int i(0); i < ob1.getDemension(); i++) sum += ob1.getVal(i) * ob2.getVal(i);
+		if (!(sum)) return true;
+		return false;
+	}
+#pragma endregion
+}

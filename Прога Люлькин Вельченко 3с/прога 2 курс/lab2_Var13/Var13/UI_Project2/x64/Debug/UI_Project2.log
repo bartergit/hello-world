@@ -1,0 +1,12 @@
+﻿  MyForm.cpp
+d:\прога 2 курс\lab2_var13\var13\ui_project2\myform.h(343): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+d:\прога 2 курс\lab2_var13\var13\ui_project2\myform.h(352): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+d:\прога 2 курс\lab2_var13\var13\ui_project2\myform.h(360): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  Source.cpp
+d:\прога 2 курс\lab2_var13\var13\ui_project2\myform.h(343): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+d:\прога 2 курс\lab2_var13\var13\ui_project2\myform.h(352): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+d:\прога 2 курс\lab2_var13\var13\ui_project2\myform.h(360): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  Создание кода...
+  MyForm.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  MyForm.obj : юсэрЁєцхэ ьюфєы№ MSIL; фы  MSIL яюёыхфютрЄхы№эр  ъюьяюэютър юЄъы■ўхэр; т√яюыэ хЄё  яюыэр  ъюьяюэютър
+  UI_Project2.vcxproj -> D:\прога 2 курс\lab2_Var13\Var13\x64\Debug\UI_Project2.exe

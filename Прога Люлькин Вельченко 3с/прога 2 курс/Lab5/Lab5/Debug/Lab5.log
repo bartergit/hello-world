@@ -1,0 +1,4 @@
+﻿  Source.cpp
+f:\c++\lab5\lab5\source.cpp(16): warning C4326: return type of 'main' should be 'int' instead of 'void'
+f:\c++\lab5\lab5\source.cpp(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Lab5.vcxproj -> F:\c++\Lab5\Debug\Lab5.exe

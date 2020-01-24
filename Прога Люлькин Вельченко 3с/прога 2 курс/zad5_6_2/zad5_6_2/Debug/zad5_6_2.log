@@ -1,0 +1,4 @@
+﻿  Source.cpp
+d:\прога 2 курс\zad5_6_2\zad5_6_2\source.cpp(32): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+d:\прога 2 курс\zad5_6_2\zad5_6_2\source.cpp(41): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  zad5_6_2.vcxproj -> D:\прога 2 курс\zad5_6_2\Debug\zad5_6_2.exe

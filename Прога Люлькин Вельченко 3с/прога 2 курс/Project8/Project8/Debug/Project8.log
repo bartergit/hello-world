@@ -1,0 +1,7 @@
+﻿  Source.cpp
+d:\прога 2 курс\project8\project8\source.cpp(50): warning C4101: mthrow: неиспользованная локальная переменная
+d:\прога 2 курс\project8\project8\source.cpp(75): warning C4101: mthrow: неиспользованная локальная переменная
+d:\прога 2 курс\project8\project8\source.cpp(108): warning C4101: mthrow: неиспользованная локальная переменная
+d:\прога 2 курс\project8\project8\source.cpp(142): warning C4101: mthrow: неиспользованная локальная переменная
+d:\прога 2 курс\project8\project8\source.cpp(176): warning C4101: mthrow: неиспользованная локальная переменная
+  Project8.vcxproj -> D:\прога 2 курс\Project8\Debug\Project8.exe

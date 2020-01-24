@@ -1,0 +1,141 @@
+/*
+Created on Wen Oct 11 2018
+|--------------------------------------|
+| author - Vlad Volynets               |
+| name - Class vector with templates   |
+|--------------------------------------|
+*/
+#include "vector.h"
+#include "vector.cpp"
+using prog::vector;
+
+int main() {
+
+	setlocale(LC_ALL, "russian");
+	char choose;
+	int num = 0, n;
+	double * arr1, * arr2;
+	char * Carr1, * Carr2;
+	bool run = true;
+	while (run) {
+		std::cout << "1 - double\n2 - char\nChoose something.";
+		std::cin >> choose;
+		switch (choose) {
+		case '1': {
+			std::cout << "Введите размерность: ";
+			std::cin >> n;
+			arr1 = new double[n];
+			arr2 = new double[n];
+			vector<double> v(n), v1(n), v2(n);
+			std::cout << "Введите вектор размерности - " << n << ": ";
+			for (int i(0); i < n; i++) std::cin >> arr1[i];
+			std::cout << "Введите вектор размерности - " << n << ": ";
+			for (int i(0); i < n; i++) std::cin >> arr2[i];
+			v1.setvector(n, arr1);
+			v2.setvector(n, arr2);
+			std::cout << "Введите константу: ";
+			int C; std::cin >> C;
+			std::cout << "Введите номер элемента который вы хотите поменять и на какой у вектора v1: ";
+			int index1, index2; 
+			double value1, value2;
+			std::cin >> index1 >> value1;
+			std::cout << "Введите номер элемента который вы хотите поменять и на какой у вектора v2: ";
+			std::cin >> index2 >> value2;
+			std::cout << "\n\n\n--------------------------------\n\n\n";
+			std::cout << "Вектор v1: ";
+			v1.showvector();
+			std::cout << "Вектор v2: ";
+			v2.showvector();
+			std::cout << "Модуль v1: ";
+			std::cout << AbsValue(v1) << std::endl;
+			std::cout << "Модуль v2: ";
+			std::cout << AbsValue(v2) << std::endl;
+			std::cout << "\n\n\n--------------------------------\n\n\n";
+			std::cout << "v1 + v2: ";
+			v = v1 + v2;
+			v.showvector();
+			std::cout << "v1 - v2: ";
+			v = v1 - v2;
+			v.showvector();
+			std::cout << "v1 * v2: ";
+			v = v1 * v2;
+			v.showvector();
+			std::cout << "Старый v1: ";
+			v1.showvector();
+			std::cout << "Изменился с " << v1[index1];
+			v1[index1] = value1;
+			std::cout << " на " << v1[index1] << std::endl;
+			std::cout << "Новый v1: ";
+			v1.showvector();
+			std::cout << "Старый v2: ";
+			v2.showvector();
+			std::cout << "Изменился на " << v2[index2];
+			v2[index2] = value2;
+			std::cout << " на " << v2[index2] << std::endl;
+			std::cout << "Новый v2: ";
+			v2.showvector();
+			std::cout << "v1 * " << C << std::endl;
+			v = v1 * C;
+			v.showvector();
+			std::cout << "\n\n\n--------------------------------\n\n\n";
+			std::cout << "Ортогональность: " <<
+				" - " << (Orto(v1, v2) ? "Ортогонален" : "Не ортогонален") << std::endl;
+			std::cout << "Коллинеарность: " <<
+				" - " << (Coll(v1, v2) ? "Коллинеарен" : "Не коллинеарен") << std::endl;
+			std::cout << "Нажмите любую клавишу чтобы продолжить." << std::endl;
+			_getch();
+			system("cls");
+		}
+		case '2': {
+			std::cout << "Введите размерность: ";
+			std::cin >> n;
+			Carr1 = new char[n];
+			Carr2 = new char[n];
+			vector<char> v(n), v1(n), v2(n);
+			std::cout << "Введите вектор размерности - " << n << ": ";
+			for (int i(0); i < n; i++) std::cin >> Carr1[i];
+			std::cout << "Введите вектор размерности - " << n << ": ";
+			for (int i(0); i < n; i++) std::cin >> Carr2[i];
+			v1.setvector(n, Carr1);
+			v2.setvector(n, Carr2);
+			std::cout << "Введите номер элемента который вы хотите поменять и на какой у вектора v1: ";
+			int index1, index2; 
+			char value1, value2;
+			std::cin >> index1 >> value1;
+			std::cout << "Введите номер элемента который вы хотите поменять и на какой у вектора v2: ";
+			std::cin >> index2 >> value2;
+			std::cout << "\n\n\n--------------------------------\n\n\n";
+			std::cout << "Вектор v1: ";
+			v1.showvector();
+			std::cout << "Вектор v2: ";
+			v2.showvector();
+			std::cout << "\n\n\n--------------------------------\n\n\n";
+			v.showvector();
+			std::cout << "Старый v1: ";
+			v1.showvector();
+			std::cout << "Изменился с " << v1[index1];
+			v1[index1] = value1;
+			std::cout << " на " << v1[index1] << std::endl;
+			std::cout << "Новый v1: ";
+			v1.showvector();
+			std::cout << "Старый v2: ";
+			v2.showvector();
+			std::cout << "Изменился на " << v2[index2];
+			v2[index2] = value2;
+			std::cout << " на " << v2[index2] << std::endl;
+			std::cout << "Новый v2: ";
+			v2.showvector();
+			std::cout << "\n\n\n--------------------------------\n\n\n";
+			std::cout << "Нажмите любую клавишу чтобы продолжить." << std::endl;
+			_getch();
+			system("cls");
+		}
+		}
+		
+	}
+
+
+
+	_getch();
+	return 0;
+}

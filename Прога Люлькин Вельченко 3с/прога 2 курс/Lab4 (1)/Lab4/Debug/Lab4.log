@@ -1,0 +1,5 @@
+﻿E:\visual\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (BinaryTree.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  Source.cpp
+d:\прога 2 курс\lab4 (1)\lab4\source.cpp(36): warning C4101: i: неиспользованная локальная переменная
+d:\прога 2 курс\lab4 (1)\lab4\source.cpp(65): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Lab4.vcxproj -> D:\прога 2 курс\Lab4 (1)\Debug\Lab4.exe

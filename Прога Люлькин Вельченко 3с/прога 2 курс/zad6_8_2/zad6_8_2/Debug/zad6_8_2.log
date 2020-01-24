@@ -1,0 +1,4 @@
+﻿  Source.cpp
+d:\прога 2 курс\zad6_8_2\zad6_8_2\source.cpp(65): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+d:\прога 2 курс\zad6_8_2\zad6_8_2\source.cpp(67): warning C4101: num: неиспользованная локальная переменная
+d:\прога 2 курс\zad6_8_2\zad6_8_2\source.cpp(26): error C4716: Triad::operator==: должна возвращать значение

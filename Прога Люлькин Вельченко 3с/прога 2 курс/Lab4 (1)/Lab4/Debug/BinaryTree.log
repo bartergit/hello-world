@@ -1,0 +1,3 @@
+﻿  Source.cpp
+f:\c++\binarytree\binarytree\source.cpp(60): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  BinaryTree.vcxproj -> F:\c++\BinaryTree\Debug\BinaryTree.exe

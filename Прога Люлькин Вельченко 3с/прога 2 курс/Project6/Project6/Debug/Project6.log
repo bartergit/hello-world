@@ -1,0 +1,3 @@
+﻿  Source.cpp
+d:\прога 2 курс\project6\project6\source.cpp(120): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  Project6.vcxproj -> D:\прога 2 курс\Project6\Debug\Project6.exe

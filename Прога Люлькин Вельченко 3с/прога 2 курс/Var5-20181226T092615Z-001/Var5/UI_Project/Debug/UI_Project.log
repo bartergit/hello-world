@@ -1,0 +1,6 @@
+﻿  MyForm.cpp
+  Source.cpp
+  Generating Code...
+  MyForm.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  UI_Project.vcxproj -> C:\Users\valbo\Documents\Visual Studio 2015\Projects\UI_Project\Debug\UI_Project.exe
+  UI_Project.vcxproj -> C:\Users\valbo\Documents\Visual Studio 2015\Projects\UI_Project\Debug\UI_Project.pdb (Partial PDB)

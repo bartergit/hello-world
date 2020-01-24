@@ -1,0 +1,46 @@
+#pragma once
+#include <iostream>
+#include <conio.h>
+namespace prog {
+	template<class T>
+	class vector {
+		int n;
+		T* val;
+	public:
+		vector();
+		vector(int);
+		vector(int, T*);
+		vector(const vector&);
+		void setvector(int, T*);
+		vector getvector();
+		void showvector();
+		int getDemension();
+		void setVal(T, int);
+		T getVal(int);
+		double Scalar(vector&, vector&);
+		vector Sum(vector&, vector&);
+		vector Sub(vector&, vector&);
+		vector MultC(vector&, double);
+
+		double operator*(vector);
+		vector operator*(const T);
+		vector operator+(vector);
+		vector operator-(vector);
+		vector operator=(const vector);
+		vector operator++();
+		vector operator--();
+		T &operator[](int);
+		T &operator=(T);
+		//friend std::ostream& operator<<(std::ostream&, vector&);
+		//friend std::istream& operator>>(std::istream&, vector&);
+
+		~vector();
+	};
+	template<class T>
+	double AbsValue(vector<T>&);
+	template<class T>
+	bool Orto(vector<T>&, vector<T>&);
+	template<class T>
+	bool Coll(vector<T>&, vector<T>&);
+}
+

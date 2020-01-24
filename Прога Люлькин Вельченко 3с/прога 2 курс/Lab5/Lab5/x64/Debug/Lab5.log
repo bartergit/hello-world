@@ -1,0 +1,14 @@
+﻿  Book.cpp
+d:\прога 2 курс\lab5\lab5\book.cpp(11): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note:  см. объявление "strcpy"
+d:\прога 2 курс\lab5\lab5\book.cpp(13): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note:  см. объявление "strcpy"
+d:\прога 2 курс\lab5\lab5\book.cpp(15): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note:  см. объявление "strcpy"
+  Dictionary.cpp
+  Item.cpp
+  Magazine.cpp
+  Source.cpp
+d:\прога 2 курс\lab5\lab5\source.cpp(16): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+d:\прога 2 курс\lab5\lab5\source.cpp(17): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...

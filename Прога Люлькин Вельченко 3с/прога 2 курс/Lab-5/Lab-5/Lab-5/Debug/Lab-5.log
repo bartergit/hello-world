@@ -1,0 +1,12 @@
+﻿  Cat.cpp
+  Dog.cpp
+  ExeptoinAge.cpp
+  Factory.cpp
+d:\прога 2 курс\lab-5\lab-5\lab-5\factory.cpp(10): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  HandlerPet.cpp
+d:\прога 2 курс\lab-5\lab-5\lab-5\handlerpet.cpp(17): warning C4018: <: несоответствие типов со знаком и без знака
+  Parrot.cpp
+  Pet.cpp
+  Source.cpp
+  Создание кода...
+  Lab-5.vcxproj -> D:\прога 2 курс\Lab-5\Lab-5\Debug\Lab-5.exe
