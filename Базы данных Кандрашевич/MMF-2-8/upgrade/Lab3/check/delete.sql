@@ -1,0 +1,9 @@
+delete from Team_statistics;
+delete from Coach;
+delete from Player_statistics;
+delete from Event;
+delete from Spiel;
+delete from Championship;
+delete from Stadium;
+delete from Player;
+delete from Team;
