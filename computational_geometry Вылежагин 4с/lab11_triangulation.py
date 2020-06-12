@@ -7,6 +7,7 @@ import copy
 import random
 from lab1_3 import draw_figure
 
+# эта статья использовалась https://habr.com/ru/post/445048/
 
 class Point():
     def __init__(self, x, y):
