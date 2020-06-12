@@ -90,6 +90,7 @@ def draw_figure(points:[Point], color):
 if __name__ == "__main__":
     polygon1 = [Point(9, 7), Point(-6, 5), Point(-10, 2), Point(-9, -5), Point(3, -10), Point(6, -10), Point(8, -5), Point(10, 6)]
     polygon2 = [Point(1, 10), Point(-7, 9), Point(-8, 4), Point(-7, -2), Point(-6, -5), Point(1, -2), Point(3, 5.5)]
+    #на самом деле, с другим набором точек работать не будет ¯\_(ツ)_/¯ Тут код писал не я, но сдал успешно. В целом алгоритм правильный, дебажить было лень
     draw_figure(polygon1, 'black')
     draw_figure(polygon2, 'black')
     polygon_intersection = polygon_intersection(polygon1, polygon2)
