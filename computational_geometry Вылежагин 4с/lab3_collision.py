@@ -76,7 +76,8 @@ def collision(given_point, points, position):
             new_a = b * ((a * b) / (b * b) * 2) - a
             given_point.set_speed((new_a.vx, new_a.vy))
         except:
-            given_point.x, given_point.y = (48, 54)
+            given_point.x, given_point.y = (48, 54)   #тут иногда возникает исключение, когда точка попадает прямо в угол. тогда формула неправильная
+            # и надо считать по другому. тут же она выносится за пределы полигона и, следственно, удаляется.
             # print("ex")
             # arr = []
             # for point in points:
