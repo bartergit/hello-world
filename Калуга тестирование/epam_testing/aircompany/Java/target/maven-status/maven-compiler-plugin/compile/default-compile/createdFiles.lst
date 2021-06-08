@@ -1,0 +1,9 @@
+entity\Airport.class
+entity\plane\Plane.class
+entity\model\ClassificationLevel.class
+entity\plane\MilitaryPlane.class
+entity\plane\ExperimentalPlane.class
+entity\plane\PassengerPlane.class
+run\Runner.class
+entity\model\ExperimentalType.class
+entity\model\MilitaryType.class
