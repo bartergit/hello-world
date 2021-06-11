@@ -1,0 +1,82 @@
+In[142]:= p[x_]:=-(x+2)^2;
+q[x_]:=2/(x+2)^2;
+f[x_]:=2;
+a=0;
+b=0.5;
+Subscript[α, 0]=1;
+Subscript[β, 0]=-1;
+Subscript[g, 0]=1.5;
+Subscript[α, 1]=1;
+Subscript[β, 1]=2.5;
+Subscript[g, 1]=0;
+h=0.1;
+Subscript[x, 0]=a;
+n=5;
+r[x_]:=-((4+2 h^2 Subscript[q, i])/(2+h Subscript[p, i]));
+s[x_]:=(2-h Subscript[p, i])/(2+h Subscript[p, i]);
+t[x_]:=(2 h^2 Subscript[f, i])/(2+h Subscript[p, i]);
+i=0;
+Subscript[p, 0]=p[a]
+Subscript[q, 0]=q[a]
+Subscript[f, 0]=f[a]
+Subscript[r, 0]=r[a]
+Subscript[s, 0]=s[a]
+Subscript[t, 0]=t[a]
+Subscript[a, 0]=-((2 h Subscript[s, 0] Subscript[α, 0]+Subscript[β, 0] Subscript[r, 0])/(Subscript[β, 0] Subscript[s, 0]+Subscript[β, 0]));
+Subscript[b, 0]=(2 h Subscript[s, 0] Subscript[g, 0]+Subscript[β, 0] Subscript[t, 0])/(Subscript[β, 0] Subscript[s, 0]+Subscript[β, 0]);
+Subscript[c, 0]=Subscript[a, 0];
+Subscript[d, 0]=Subscript[b, 0];
+i=0;
+Subscript[p, i]
+Subscript[q, i]
+Subscript[f, i]
+Subscript[r, i]
+Subscript[s, i]
+Subscript[t, i]
+Subscript[c, i]
+Subscript[d, i]
+
+x=a;
+For[i=1,i<=5,i++,x+=h;Subscript[p, i]=p[x];Subscript[q, i]=q[x];Subscript[f, i]=f[x];Subscript[r, i]=-((4+2 h^2 Subscript[q, i])/(2+h Subscript[p, i]));Subscript[s, i]=(2-h Subscript[p, i])/(2+h Subscript[p, i]);Subscript[t, i]=(2 h^2 Subscript[f, i])/(2+h Subscript[p, i]);Subscript[c, i]=(-Subscript[s, i]-Subscript[r, i] Subscript[c, i-1])/Subscript[c, i-1];Subscript[d, i]=Subscript[t, i]-Subscript[r, i] Subscript[d, i-1]-Subscript[c, i] Subscript[d, i-1];Print[x," ",Subscript[p, i]," ",Subscript[q, i]," ",Subscript[f, i]," ",Subscript[r, i]," ",Subscript[s, i]," ",Subscript[t, i]," ",Subscript[c, i]," ",Subscript[d, i]];]
+Subscript[a, n-1]=(Subscript[β, 1] Subscript[s, n]+Subscript[β, 1])/(2 h Subscript[α, 1]-Subscript[β, 1] Subscript[r, n])
+Subscript[b, n-1]=(2 h Subscript[g, 1]-Subscript[β, 1] Subscript[t, n])/(2 h Subscript[α, 1]-Subscript[β, 1] Subscript[r, n])
+i=5;
+Subscript[y, i]=(Subscript[a, i-1] Subscript[d, i-1]-Subscript[b, i-1] Subscript[c, i-1])/(Subscript[a, i-1]-Subscript[c, i-1]);
+For[i=5,i>0,i--,Subscript[y, i-1]=(Subscript[y, i]-Subscript[d, i-1])/Subscript[c, i-1];];
+TextGrid[Prepend[Table[{Subscript[y, i]},{i,0,5}],{Subscript["y", "i"]}],Frame->All]
+
+Subscript[α, 0] Subscript[y, 0]+Subscript[β, 0] (Subscript[y, 1]-Subscript[y, 0]) 10-Subscript[g, 0]
+Subscript[α, 1] Subscript[y, 5]+Subscript[β, 1] (Subscript[y, 5]-Subscript[y, 4]) 10-Subscript[g, 1]
+
+Out[160]= -4
+Out[161]= 1/2
+Out[162]= 2
+Out[163]= -2.50625
+Out[164]= 1.5
+Out[165]= 0.025
+Out[171]= -4
+Out[172]= 1/2
+Out[173]= 2
+Out[174]= -2.50625
+Out[175]= 1.5
+Out[176]= 0.025
+Out[177]= 1.1225
+Out[178]= -0.17
+During evaluation of In[142]:= 0.1 -4.41 0.453515 2 -2.57157 1.56575 0.0256575 1.17669 -0.211471
+During evaluation of In[142]:= 0.2 -4.84 0.413223 2 -2.64397 1.63852 0.0263852 1.25149 -0.268085
+During evaluation of In[142]:= 0.3 -5.29 0.378072 2 -2.72438 1.71924 0.0271924 1.35063 -0.341091
+During evaluation of In[142]:= 0.4 -5.76 0.347222 2 -2.81387 1.80899 0.0280899 1.47449 -0.428757
+During evaluation of In[142]:= 0.5 -6.25 0.32 2 -2.91375 1.90909 0.0290909 1.619 -0.526039
+Out[181]= 0.971723
+Out[182]= -0.00971723
+Out[186]= Subscript[y, i]
+0.999823
+0.952301
+0.909092
+0.869635
+0.83346
+0.800175
+
+
+Out[187]= -0.0249602
+Out[188]= -0.0319523
